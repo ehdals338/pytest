@@ -30,3 +30,14 @@ def solution(x):
     return answer
 """
 
+x = 12
+
+sum = 0
+# 자리수의 합을 구하기 위해 str 이용하여 x를 문자열로 변경
+for i in str(x):
+    sum += int(i)
+    
+if x % sum == 0:
+    print("true")
+else:
+    print("false")
